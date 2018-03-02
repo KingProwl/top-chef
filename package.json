@@ -1,12 +1,13 @@
 {
-  "name"         : "node-web-scrape",
-  "version"      : "0.0.1",
-  "description"  : "Scrap Michelin.",
-  "main"         : "index.js",
-  "author"       : "Paul",
-  "dependencies" : {
-    "express"    : "latest",
-    "request"    : "latest",
-    "cheerio"    : "latest"
+  "name": "node-web-scrape",
+  "version": "0.0.1",
+  "description": "Scrap Michelin.",
+  "main": "index.js",
+  "author": "Paul",
+  "dependencies": {
+    "cheerio": "latest",
+    "express": "latest",
+    "npx": "^9.7.1",
+    "request": "latest"
   }
 }
