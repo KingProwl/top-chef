@@ -1,21 +1,57 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Row, Col, Card, CardImg, CardText, CardBody, CardTitle, } from 'reactstrap';
 import './App.css';
+import json from './JSONFiles/lafourchette.json';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+            {
+              json.map(function(restaurant){
+                return (
+                  <Card className="cards">
+                  <div class="card text-left border-success ">
+                  <div class="card-header border-success ">
+
+                    <ul class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item" >
+                        <a class="nav-link active" >Offre</a>
+                      </li>
+
+                      <li class="nav-item" >
+                        <a class="nav-link" href={restaurant.link}>Voir le deal sur Lafourchette.com</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="card-block">
+                    <h4 class="card-title"> {restaurant.name}</h4>
+                    
+                    
+                    <ul class="list-group list-group-flush border-primary">
+                      <li class="list-group-item">Palmarès: {restaurant.stars} </li>
+                      <li class="list-group-item">Ville: {restaurant.address.address_locality}, {restaurant.address.postal_code}</li>
+                      <li class="list-group-item">Promotion(s): {restaurant.promotions}</li>
+                    </ul>
+                  </div>
+                </div>
+                </Card>
+                );
+              })
+            }
+            </div>
+          </div>
+        </div>        
       </div>
     );
   }
 }
 
 export default App;
+
