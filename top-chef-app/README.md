@@ -1,6 +1,6 @@
 ## Welcome to my top-chef react app
 
-Clone the repository or download the zip file, then with the Node.js command prompt navigate trhought the top-chef-app folder:
+Clone the repository or download the zip file, then with the Node.js command prompt navigate throught the top-chef-app folder:
 
 ```
 cd top-chef-app
