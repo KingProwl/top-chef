@@ -17,9 +17,9 @@ body {
   padding: 3px;
   width: 75%;
   display: inline-flex;
-  background-color: blue;
 }
 
-
-
-
+.page-header {
+  color: #E3A723;
+  background-color: #1B2B32
+}

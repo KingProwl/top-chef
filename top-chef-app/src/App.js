@@ -7,8 +7,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
 
+        <div class="page-header">
+          <div class="pull-left">
+          <h1>Top-chef project: Get the current deal for a French Michelin starred restaurants.</h1>
+          </div>
+          <div class="pull-right">
+          <h3 class="text-right">by Paul Ghafari</h3>
+          </div>
+          <div class="clearfix"></div>
+        </div>
         <div class="container">
           <div class="row">
             <div class="col-sm">
@@ -52,6 +60,7 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
 
